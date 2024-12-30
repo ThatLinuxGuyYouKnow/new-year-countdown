@@ -6,7 +6,7 @@ import { formatCountdown } from './utils/format-countdown'
 export const runtime = 'edge'
 
 export async function generateMetadata(): Promise<Metadata> {
-  const host = headers().get('host')
+  const host = (await headers()).get('host')
   const protocol = process?.env.NODE_ENV === 'development' ? 'http' : 'https'
   const timeLeft = getTimeLeft()
   const { days, hours, minutes, seconds } = formatCountdown(timeLeft)
