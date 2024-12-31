@@ -1,11 +1,13 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Twinkle_Star } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
     title: 'New Year Countdown',
     description: 'Countdown to the New Year!',
+    images: ['https://new-year-countdown-eight-lilac.vercel.app/icon.png']
+
 }
 
 export default function RootLayout({
