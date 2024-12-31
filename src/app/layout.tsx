@@ -1,13 +1,24 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Metadata } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
+export const metadata: Metadata = {
     title: 'New Year Countdown',
     description: 'Countdown to the New Year!',
-    images: ['https://new-year-countdown-eight-lilac.vercel.app/icon.png']
+    openGraph: {
+        title: 'New Year Countdown',
+        description: 'Countdown to the New Year!',
 
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'New Year Countdown',
+        description: 'Countdown to the New Year!',
+
+
+    },
 }
 
 export default function RootLayout({
