@@ -22,9 +22,6 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'New Year Countdown',
-      description: 'Countdown to the New Year!',
-      images: ['https://new-year-countdown-eight-lilac.vercel.app/fallback-image.png'],
     },
   }
 }
