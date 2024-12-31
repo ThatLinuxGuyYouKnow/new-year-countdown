@@ -4,11 +4,12 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 export function Snowflake() {
+
     const [position, setPosition] = useState({ x: 0, y: 0 })
 
     useEffect(() => {
         setPosition({
-            x: Math.random() * window.innerWidth,
+            x: Math.random() * window?.innerWidth,
             y: -20,
         })
     }, [])
@@ -18,7 +19,7 @@ export function Snowflake() {
             className="absolute text-yellow-100/20 pointer-events-none"
             initial={{ x: position.x, y: position.y }}
             animate={{
-                y: window.innerHeight + 20,
+                y: window?.innerHeight + 20,
                 x: position.x + (Math.random() * 200 - 100),
             }}
             transition={{
@@ -34,4 +35,5 @@ export function Snowflake() {
         </motion.div>
     )
 }
+
 
