@@ -8,7 +8,7 @@ import { formatCountdown } from './utils/format-countdown'
 
 export default function CountdownPage() {
     const [timeLeft, setTimeLeft] = useState<number>(0)
-    const [isNewYear, setIsNewYear] = useState(false)
+    const [_isNewYear, setIsNewYear] = useState(false)
     const [showCelebration, setShowCelebration] = useState(false)
 
     useEffect(() => {
