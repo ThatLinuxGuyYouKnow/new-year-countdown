@@ -15,6 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "New Year",
   description: "Countdown to a new year",
+  openGraph: {
+    title: "New Year",
+    description: "Countdown to a new year",
+    images: ["https://new-year-countdown-eight-lilac.vercel.app/fallback-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Year",
+    description: "Countdown to a new year",
+    images: ["https://new-year-countdown-eight-lilac.vercel.app/fallback-image.png"],
+  },
 };
 
 export default function RootLayout({
