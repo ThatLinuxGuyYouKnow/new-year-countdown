@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { headers } from 'next/headers'
 import CountdownPage from './countdown-page'
 import { formatCountdown } from './utils/format-countdown'
-import fallBackImage from './fallback-image.png'
+
 export const runtime = 'edge'
 
 export async function generateMetadata(): Promise<Metadata> {
