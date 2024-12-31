@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'New Year Countdown',
         description: 'Countdown to the New Year!',
-        images: ['./icon.png']
+        images: ['icon.png']
 
     },
     twitter: {
         card: 'summary_large_image',
         title: 'New Year Countdown',
         description: 'Countdown to the New Year!',
-        images: ['./icon.png']
+        images: ['icon.png']
 
 
     },
